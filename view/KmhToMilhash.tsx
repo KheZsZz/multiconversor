@@ -9,7 +9,7 @@ const KmhToMilhash = () => {
 
     return (
       <View style={styles.container}>
-        <Text>Km/h To Milhas/h Screen</Text>
+        <Button title='Km/h To Milhas/h Screen' onPress={()=>{}}/>
         <TextInput onChange={(e)=>{setKm(e.target.value)}} />
         <Text>{ km.toString }</Text>
       </View>
