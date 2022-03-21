@@ -8,7 +8,10 @@ const HomeScreen = ({ navigation }:any) => {
     return (
       <View style={styles.containerHome}>
 
-        <Text>Exercicios de PAM (programação e algoritmo mobile)</Text>
+        <Text style={styles.title}>Exercicios de PAM (programação e algoritmo mobile)</Text>
+        <Text></Text>
+        <Text></Text>
+        <Text></Text>
 
         <Pressable style={styles.buttons} onPress={()=>{navigation.navigate('KmhToMilhash')}}>
           <Text style={styles.textButton}>Km/h To Milhas/h</Text>

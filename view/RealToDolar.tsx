@@ -27,7 +27,7 @@ const RealToDolar = () => {
   const [valor_conv, setValorConv] = useState<number>()
 
   const calcular = () => {
-    setValorConv(Number(valorDolar?.USDBRL.high) * Number(valorBRL));
+    setValorConv(Number(valorDolar?.USDBRL.bid) * Number(valorBRL));
   }
 
   useEffect(()=>{
@@ -46,7 +46,7 @@ const RealToDolar = () => {
     })
     .catch((error)=>{
       console.error(error)
-      setLoadding(false);
+      setLoadding(true);
     })
     .finally(()=>{setLoadding(false)});
   }, [setValorDolar, setLoadding])
@@ -64,7 +64,7 @@ const RealToDolar = () => {
         <View style={styles.container}>
           <View>
             <Text style={styles.title}>{valorDolar?.USDBRL.name}</Text>
-            <Text style={styles.textButton}>Valor atual do dolar: US$ {parseFloat(String(valorDolar?.USDBRL.high)).toFixed(2)}</Text>
+            <Text style={styles.textButton}>Valor atual do dolar: US$ {parseFloat(String(valorDolar?.USDBRL.bid)).toFixed(2)}</Text>
           </View>
           
           <TextInput 

@@ -36,7 +36,9 @@ export const styles = StyleSheet.create({
 
     textButton:{
       color:'#000', 
-      textAlign:'center'
+      textAlign:'center',
+      fontWeight:'900',
+      textTransform:'uppercase'
     },
 
     inputText:{
@@ -51,4 +53,7 @@ export const styles = StyleSheet.create({
       borderRadius:10,
       margin:10,
     },
+    navbar : {
+      backgroundColor:'#f00'
+    }
   });
